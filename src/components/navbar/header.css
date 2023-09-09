@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: black;
+    align-items: center;
+    padding: 30px;
+}
+
+header img {
+    height: 3.5rem;
+    position: relative;
+}
+
+header li {
+    list-style-type: none;
+}
+
+.title-navbar {
+    position: relative;
+    bottom: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    }
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0px 2px rgba(255, 255, 255, 0.42);
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.carrito p {
+    font-size: 18px;
+    align-self: flex-start;
+}
+
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;        
+    }
+
+    .nav-list {
+        flex-flow: column;
+        align-items: end;
+
+    }
+}
