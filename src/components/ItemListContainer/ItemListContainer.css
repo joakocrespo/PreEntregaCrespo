@@ -5,21 +5,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(106, 103, 103);
-
-}
 
 .itemlistcontainer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    gap: 15px;
-    background-color: rgb(106, 103, 103);
-    padding: 10px;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(188, 188, 188, 0.535);
 }
 
 .titulo {
@@ -27,7 +20,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.73);
     color: white;
     height: 2.5rem;
     width: 100%;

@@ -1,0 +1,10 @@
+.carrito {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.carrito p {
+    font-size: 18px;
+    align-self: flex-start;
+}

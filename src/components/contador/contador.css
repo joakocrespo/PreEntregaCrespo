@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-contador{
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+
+}
+
+.contador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 12rem;
+    border-radius: 10px;
+    box-shadow: .5px .5px .5px 1px rgba(1, 56, 255, 0.802);
+}
+
+.numerito-stock {
+    display: flex;
+    box-shadow: .5px .5px .5px 1px rgba(1, 56, 255, 0.802);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.contador h3 {
+    color: rgba(1, 56, 255, 0.802);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contador span {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contador span button {
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    height: 2rem;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.agregar-carrito {
+    color: white;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.73);
+    box-shadow: 0px 1px 5px 1px black;
+    cursor: pointer;
+}
+
+.agregar-carrito button {
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}

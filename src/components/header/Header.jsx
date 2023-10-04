@@ -1,9 +1,10 @@
 import './header.css'
 import logo from './assets/logo-apple.png'
-import carrito from './assets/logo-carrito.png'
 import logoMenu from './assets/logo-menu.png'
 import logoCerrar from './assets/logo-cerrar.png'
 import { useState } from 'react'
+import Carrito from '../Carrito/Carrito'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
 
@@ -22,7 +23,7 @@ export const Header = () => {
         <header>
             <li className='logo-title'>
                 <img src={logo} alt='logo' />
-                <a href="#" className='title-navbar'>iShop</a>
+                <Link to="/" className='title-navbar'>iShop</Link>
             </li>
             <button id='abrir' onClick={abrir} className='abrir-menu'> <img src={logoMenu} alt="Logo Menu" /> </button>
             <nav className={`nav ${menuMobile ? 'visible' : ''}`} >
@@ -30,20 +31,21 @@ export const Header = () => {
                 <button id='cerrar' onClick={cerrar} className='cerrar-menu'><img src={logoCerrar} alt="Logo Cerrar" /></button>
                 <ul className='nav-list'>
                     <li>
-                        <a href="#">Equipos</a>
+                        <Link to="/">Equipos</Link>
                     </li>
                     <li>
-                        <a href="#">iPhones</a>
+                        <Link to="/productos/celulares">iPhone</Link>
                     </li>
                     <li>
-                        <a href="#">iPads</a>
+                        <Link to="/productos/mac">Mac</Link>
                     </li>
                     <li>
-                        <a href="#">Apple-Watchs</a>
+                        <Link to="/productos/ipad">iPad</Link>
                     </li>
                     <li>
-                        <a href="#" className='carrito'><img src={carrito} alt="" /><p>0</p></a>
+                        <Link to="/productos/watch">Watch</Link>
                     </li>
+                    <Carrito />
                 </ul>
             </nav>
         </header>
