@@ -34,16 +34,16 @@ export const Header = () => {
                         <Link to="/">Equipos</Link>
                     </li>
                     <li>
-                        <Link to="/productos/celulares">iPhone</Link>
+                        <Link to="/productos/iPhone">iPhone</Link>
                     </li>
                     <li>
-                        <Link to="/productos/mac">Mac</Link>
+                        <Link to="/productos/Mac">Mac</Link>
                     </li>
                     <li>
-                        <Link to="/productos/ipad">iPad</Link>
+                        <Link to="/productos/iPad">iPad</Link>
                     </li>
                     <li>
-                        <Link to="/productos/watch">Watch</Link>
+                        <Link to="/productos/Watch">Watch</Link>
                     </li>
                     <Carrito />
                 </ul>

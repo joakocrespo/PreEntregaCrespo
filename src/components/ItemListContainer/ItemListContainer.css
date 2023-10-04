@@ -14,14 +14,3 @@
     padding: 20px;
     background-color: rgba(188, 188, 188, 0.535);
 }
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.73);
-    color: white;
-    height: 2.5rem;
-    width: 100%;
-}

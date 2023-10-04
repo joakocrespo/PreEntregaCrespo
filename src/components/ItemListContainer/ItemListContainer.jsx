@@ -19,20 +19,18 @@ export const ItemListContainer = (p) => {
     useEffect(() => {
         pedirProductos()
             .then((res) => {
-                
                     if(categoria) {
-                        setProductos(res.filter((prod) => prod.categoria === categoria));
+                        setProductos( res.filter((prod) => prod.categoria === categoria) );
                     }else{
                         setProductos(res);
                     }
             })
-    })
+    }, [categoria])
 
 
 
     return (
         <div className='itemlistcontainer'>
-            <h2 className='titulo'>{p.greeting}</h2>
             <ItemList productos={productos} />
         </div>
     )

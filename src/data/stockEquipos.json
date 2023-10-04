@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone 13",
         "memoria": "128GB",
         "stock": 10,
@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone 13 Pro",
         "memoria": "256GB",
         "stock": 8,
@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone SE",
         "memoria": "64GB",
         "stock": 12,
@@ -109,7 +109,7 @@
     },
     {
         "id": 13,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone 12",
         "memoria": "128GB",
         "stock": 7,
@@ -118,7 +118,7 @@
     },
     {
         "id": 14,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone 12 Pro",
         "memoria": "256GB",
         "stock": 6,
@@ -127,7 +127,7 @@
     },
     {
         "id": 15,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone XR",
         "memoria": "64GB",
         "stock": 5,
@@ -217,7 +217,7 @@
     },
     {
         "id": 25,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone 11",
         "memoria": "64GB",
         "stock": 10,
@@ -226,7 +226,7 @@
     },
     {
         "id": 26,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone 11 Pro",
         "memoria": "256GB",
         "stock": 8,
@@ -235,7 +235,7 @@
     },
     {
         "id": 27,
-        "categoria": "celulares",
+        "categoria": "iPhone",
         "nombre": "iPhone XS",
         "memoria": "64GB",
         "stock": 6,
