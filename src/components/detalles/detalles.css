@@ -24,7 +24,7 @@
 .detalles-container {
     display: flex;
     flex-flow: column;
-    align-items: start;
+    align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
 }
@@ -39,7 +39,7 @@
 
 .presentacion-container h2{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     font-size: 2.5rem;
     padding: 1rem;
 }

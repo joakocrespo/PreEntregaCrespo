@@ -30,7 +30,7 @@ const DetallesContainer = () => {
             .then((res) => {
                 setTimeout(() => {
                     setItem(res);
-                }, 500);
+                }, 200);
             })
     }, [id])
     
