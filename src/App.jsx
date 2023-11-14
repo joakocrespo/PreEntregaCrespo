@@ -3,16 +3,15 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 import DetallesContainer from "./components/detalles/DetallesContainer";
 import Footer from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
-import { useState } from "react";
-import { CartContext } from "./context/cartContext";
+import Carrito from "./components/carrito/Carrito";
+import { CartProvider } from "./context/CartContext";
+import Checkout from "./components/checkout/Checkout";
 
 function App() {
 
-    const [carrito, setCarrito] = useState([]);
-
     return (
         <>
-            <CartContext.Provider value={ {carrito, setCarrito} }>
+            <CartProvider >
                 <BrowserRouter>
                     <Header />
                     <Routes>
@@ -20,10 +19,12 @@ function App() {
                         <Route path="/item/:id" element={<DetallesContainer />} />
                         <Route path="/productos/" element={<ItemListContainer />} />
                         <Route path="/productos/:categoria" element={<ItemListContainer />} />
+                        <Route path="/carrito" element={<Carrito />} />
+                        <Route path="/checkout" element={<Checkout />} />
                     </Routes>
                 </BrowserRouter>
                 <Footer />
-            </CartContext.Provider>
+            </CartProvider>
         </>
     );
 }

@@ -1,6 +1,5 @@
 import './footer.css'
 import logo from './assets/logo-apple.png'
-import Carrito from '../Carrito/Carrito'
 
 function Footer() {
 
@@ -17,7 +16,6 @@ function Footer() {
                     <li>
                         <a href="#">Contacto</a>
                     </li>
-                    <Carrito />
                 </ul>
             </nav>
         </footer>

@@ -1,25 +1,23 @@
 import React, { useContext, useState } from 'react'
 import './detalles.css'
 import Contador from '../contador/Contador'
-import { CartContext } from '../../context/cartContext'
+import { CartContext } from '../../context/CartContext'
 
-const DetallesProducto = ( {item} ) => {
+const DetallesProducto = ({ item }) => {
 
-  const { carrito, setCarrito} = useContext(CartContext)
+  const { carrito, agregarCarrito  } = useContext(CartContext);
 
-  const [cantidad, setCantidad] = useState(1)
+  console.log(carrito)
 
-    const sumar = () => {
-      cantidad < item.stock && setCantidad(cantidad + 1)
-    }
-    const restar = () => {
-      cantidad > 1 && setCantidad(cantidad - 1)
-    }
-    const agregarCarrito = () => {
-      const itemAgregado = {...item, cantidad};
+  const [cantidad, setCantidad] = useState(1);
 
-      setCarrito( [...carrito, itemAgregado] )
-    }
+  const sumar = () => {
+    cantidad < item.stock && setCantidad(cantidad + 1)
+  }
+  const restar = () => {
+    cantidad > 1 && setCantidad(cantidad - 1)
+  }
+  
 
   return (
     <div className="fondo-detalles">
@@ -33,11 +31,12 @@ const DetallesProducto = ( {item} ) => {
           <p> El equipo cuenta con un almacenamiento de {item.memoria} </p>
           <p> Tiene un valor de ${item.precio}usd </p>
           <p> Y contamos con un stock de {item.stock} equipos.</p>
-          <Contador 
-          sumar={sumar} 
-          restar={restar} 
-          cantidad={cantidad} 
-          agregarCarrito={agregarCarrito} />
+          <Contador
+            sumar={sumar}
+            restar={restar}
+            cantidad={cantidad}
+            agregarCarrito={() => { agregarCarrito(item, cantidad)}}
+          />
         </div>
       </div>}
     </div>

@@ -3,8 +3,8 @@ import logo from './assets/logo-apple.png'
 import logoMenu from './assets/logo-menu.png'
 import logoCerrar from './assets/logo-cerrar.png'
 import { useState } from 'react'
-import Carrito from '../Carrito/Carrito'
 import { Link } from 'react-router-dom'
+import CartWidget from '../cartWidget/CartWidget'
 
 export const Header = () => {
 
@@ -45,7 +45,9 @@ export const Header = () => {
                     <li>
                         <Link to="/productos/Watch">Watch</Link>
                     </li>
-                    <Carrito />
+                    <li>
+                        <CartWidget />
+                    </li>
                 </ul>
             </nav>
         </header>
